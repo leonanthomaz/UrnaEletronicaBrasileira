@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/tela.css">
+
+    <title>Urna Eletrônica Brasileira</title>
+</head>
+<body>
+    <div class="urna-area">
+        <div class="urna">
+          <div class="tela">
+            <div class="bloco-1">
+                <div class="bloco-1-left">
+                    <div class="bloco-1-texto1">
+                        <span>SEU VOTO PARA:</span>
+                    </div>
+                    <div class="bloco-1-texto2">
+                        <span></span>
+                    </div>
+                    <div class="bloco-1-texto3">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div><br>
+                    <div class="bloco-1-texto4">
+                        Nome: <br>
+                        Partido: <br>
+                        Vice:
+                    </div>
+                </div>
+                <div class="bloco-1-right">
+                  <div class="bloco-1-img" >
+                    <img src="" alt="" >
+                    <span></span>
+                  </div>
+                    <div class="bloco-1-img-small"  >
+                      <img src="" alt="" >
+                      <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bloco-2"><br>
+                <p>
+                Aperte a tecla:<br>
+                CONFIRMAR para CONFIRMAR este voto<br>
+                CORRIGE para REINICIAR este voto<br>
+                </p>
+            </div>
+          </div>
+    
+          <div class="lateral">
+            <div class="logoarea">
+              <img src="./images/brasao.png" alt="Brasão da República">
+              <h2>Justiça Eleitoral</h2>
+            </div>
+    
+            <div class="teclado">
+              <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou(1)">1</div>
+                <div class="teclado--botao" onclick="clicou(2)">2</div>
+                <div class="teclado--botao" onclick="clicou(3)">3</div>
+              </div>
+              <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou(4)">4</div>
+                <div class="teclado--botao" onclick="clicou(5)">5</div>
+                <div class="teclado--botao" onclick="clicou(6)">6</div>
+              </div>
+              <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou(7)">7</div>
+                <div class="teclado--botao" onclick="clicou(8)">8</div>
+                <div class="teclado--botao" onclick="clicou(9)">9</div>
+              </div>
+              <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou(0)">0</div>
+              </div>
+              <div class="teclado--linha">
+                <div class="teclado--botao especial branco" onclick="Branco()">Branco</div>
+                <div class="teclado--botao especial laranja" onclick="Corrige()">Corrige</div>
+                <div class="teclado--botao especial verde" onclick="Confirma()">Confirma</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/etapas.js"></script>
+      <script src="./js/script.js"></script>
+</body>
+</html>
